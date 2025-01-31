@@ -1,0 +1,135 @@
+/* ViewTransactions.css */
+.transaction-list-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .transaction-list-container h2 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .transaction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .transaction-list button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .transaction-list button:hover {
+    background-color: #0056b3;
+  }
+  /* Style the container for the edit transaction form */
+.edit-transaction-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title style */
+.edit-transaction-form h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for the input fields */
+.edit-transaction-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Style for number input to ensure amount is visually distinct */
+.edit-transaction-form input[type="number"] {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Style for the date input */
+.edit-transaction-form input[type="date"] {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Button styles */
+.edit-transaction-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-transaction-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-transaction-form button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Hover effect for buttons */
+.edit-transaction-form button:hover {
+  opacity: 0.9;
+}
+
+/* Optional: Add some space between the buttons */
+.edit-transaction-form button + button {
+  margin-top: 10px;
+}
+
+/* Optional: Style the cancel button to make it more obvious */
+.edit-transaction-form button[type="button"] {
+  margin-top: 10px;
+  background-color: #ff4136;
+}
+
+.edit-transaction-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.edit-transaction-form button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* Add focus styles for inputs */
+.edit-transaction-form input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}

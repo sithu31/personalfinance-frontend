@@ -1,0 +1,67 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.report-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 40px;
+}
+
+.financial-statement, .net-profit {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+
+.net-profit .profit-percentage {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #28a745;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .report-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .financial-statement, .net-profit {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+}
+
+/* Custom chart styles */
+.chart-container canvas {
+  border-radius: 10px;
+}

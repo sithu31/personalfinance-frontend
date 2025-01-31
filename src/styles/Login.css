@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('C:/Users/SARAN R/Downloads/personal-finance.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+  
