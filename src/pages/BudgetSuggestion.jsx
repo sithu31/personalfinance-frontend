@@ -17,7 +17,7 @@ function BudgetSuggestion() {
           return;
         }
 
-        const response = await axios.get("http://localhost:4000/api/budget-suggestion", {
+        const response = await axios.get("https://new-backend-8nee.onrender.com/api/budget-suggestion", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

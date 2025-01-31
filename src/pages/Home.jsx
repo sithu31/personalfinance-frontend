@@ -11,7 +11,7 @@ function Home() {
 
   useEffect(() => {
     // Test connection to the backend
-    axios.get("http://localhost:4000/api/test")
+    axios.get("https://new-backend-8nee.onrender.com/api/test")
       .then((response) => console.log(response.data.message))
       .catch((error) => console.error("Error connecting to backend:", error));
   }, []);

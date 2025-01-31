@@ -20,7 +20,7 @@ function AccountSummary({ refreshTrigger }) {
     }
 
     try {
-      const response = await axios.get("http://localhost:4000/api/account-summary", {
+      const response = await axios.get("https://new-backend-8nee.onrender.com/api/account-summary", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

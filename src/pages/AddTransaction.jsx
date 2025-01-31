@@ -24,7 +24,7 @@ function AddTransaction() {
   
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/transactions",
+        "https://new-backend-8nee.onrender.com/api/transactions",
         {
           amount,
           description,

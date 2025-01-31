@@ -21,7 +21,7 @@ function ViewTransactions({ refreshAccountSummary }) {
       }
 
       try {
-        const response = await axios.get("http://localhost:4000/api/transactions", {
+        const response = await axios.get("https://new-backend-8nee.onrender.com/api/transactions", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTransactions(response.data);
@@ -48,7 +48,7 @@ function ViewTransactions({ refreshAccountSummary }) {
   const fetchReportData = async () => {
     try {
       const token = localStorage.getItem("token");
-      const reportResponse = await axios.get("http://localhost:4000/api/report", {
+      const reportResponse = await axios.get("https://new-backend-8nee.onrender.com/api/report", {
         headers: { Authorization: `Bearer ${token}` },
       });
       console.log("Report updated:", reportResponse.data);
@@ -72,7 +72,7 @@ function ViewTransactions({ refreshAccountSummary }) {
 
     try {
       const response = await axios.put(
-        `http://localhost:4000/api/transactions/${editingTransaction._id}`,
+        `https://new-backend-8nee.onrender.com/api/transactions/${editingTransaction._id}`,
         {
           description: updatedDescription,
           amount: parseFloat(updatedAmount), // ✅ Ensure amount is a number

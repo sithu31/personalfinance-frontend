@@ -22,7 +22,7 @@ function Login({ setIsLoggedIn }) {
     const requestBody = JSON.stringify({ email, password });
   
     try {
-      const response = await fetch(`http://localhost:4000${endpoint}`, {
+      const response = await fetch(`https://new-backend-8nee.onrender.com${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: requestBody,
